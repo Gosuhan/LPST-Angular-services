@@ -1,5 +1,5 @@
 <ul>
-  <li>Legal notice</li>
-  <li>Credits</li>
+  <li [style.color] = "appService.selectedMenu == 'legal' ? 'red' : 'black'" (click)="selectMenu('legal')">Legal notice</li>
+  <li [style.color] = "appService.selectedMenu == 'credits' ? 'red' : 'black'" (click)="selectMenu('credits')">Credits</li>
 </ul>
 
