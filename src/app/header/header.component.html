@@ -1,3 +1,5 @@
+<mat-toolbar fxLayout="row" fxLayoutAlign="space-between"> 
+<span>Application</span>
 <button mat-button [matMenuTriggerFor]="menu">
   <mat-icon><i>view_headline</i></mat-icon>
   <mat-menu #menu="matMenu">
@@ -8,3 +10,4 @@
   <button mat-menu-item [style.color]="appService.selectedMenu == 'todolist' ? 'red' : 'black'" (click)="selectMenu('todolist')"><mat-icon>toc</mat-icon>To Do list</button>
 </mat-menu>
 </button>
+</mat-toolbar>

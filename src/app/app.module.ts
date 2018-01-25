@@ -6,6 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppService } from './app.service';
 import { AddComponent } from './add/add.component';
 import { ListComponent } from './list/list.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -24,7 +26,7 @@ import { ListComponent } from './list/list.component';
     BodyComponent,
     FooterComponent,
     AddComponent,
-    ListComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,9 @@ import { ListComponent } from './list/list.component';
     FlexLayoutModule,
     MatButtonModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]
