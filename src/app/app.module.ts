@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { AppComponent } from './app.component';
@@ -21,12 +24,15 @@ import { ListComponent } from './list/list.component';
     BodyComponent,
     FooterComponent,
     AddComponent,
-    ListComponent
+    ListComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]
