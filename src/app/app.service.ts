@@ -5,6 +5,8 @@ export class AppService {
 
   selectedMenu = 'home';
 
+  Todolist = [];
+
   constructor() { }
 
 }
