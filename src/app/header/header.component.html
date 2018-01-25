@@ -1,10 +1,10 @@
 <button mat-icon-button [matMenuTriggerFor]="menu">
   <mat-icon>Menu</mat-icon>
   <mat-menu #menu="matMenu">
-  <button [style.color]="appService.selectedMenu == 'home' ? 'red' : 'black'" (click)="selectMenu('home')">Home</button>
-  <button [style.color]="appService.selectedMenu == 'skills' ? 'red' : 'black'" (click)="selectMenu('skills')">Skills</button>
-  <button [style.color]="appService.selectedMenu == 'experiences' ? 'red' : 'black'" (click)="selectMenu('experiences')">Experiences</button>
-  <button [style.color]="appService.selectedMenu == 'contact' ? 'red' : 'black'" (click)="selectMenu('contact')">Contact</button>
-  <button [style.color]="appService.selectedMenu == 'todolist' ? 'red' : 'black'" (click)="selectMenu('todolist')">To Do list</button>
+  <button mat-menu-item [style.color]="appService.selectedMenu == 'home' ? 'red' : 'black'" (click)="selectMenu('home')">Home</button>
+  <button mat-menu-item [style.color]="appService.selectedMenu == 'skills' ? 'red' : 'black'" (click)="selectMenu('skills')">Skills</button>
+  <button mat-menu-item [style.color]="appService.selectedMenu == 'experiences' ? 'red' : 'black'" (click)="selectMenu('experiences')">Experiences</button>
+  <button mat-menu-item [style.color]="appService.selectedMenu == 'contact' ? 'red' : 'black'" (click)="selectMenu('contact')">Contact</button>
+  <button mat-menu-item [style.color]="appService.selectedMenu == 'todolist' ? 'red' : 'black'" (click)="selectMenu('todolist')">To Do list</button>
 </mat-menu>
 </button>
